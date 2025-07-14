@@ -1,0 +1,45 @@
+.about {
+  display: flex;
+  margin: 0;
+  gap: 20px; /* Add space between the profile and text */
+  padding: 10px; /* Add some padding */
+  height: 900px;
+  padding-top: 100px;
+  background-color: white;
+}
+
+.profile img {
+  width: 620px; /* Set a fixed size for the profile image */
+  height: 800px; /* Maintain aspect ratio */
+  margin-left: 100px;
+}
+
+.aboutMe p {
+  font-size: 1.2rem; /* Set font size */
+  text-align: left;
+  line-height: 1.5; /* Increase line spacing for readability */
+  color: #333; /* Dark gray color for text */
+  margin: 10px 20px; /* Add vertical spacing around the paragraph */
+  padding: 10px; /* Add padding inside the paragraph */
+}
+.aboutMe h1 {
+  text-align: center;
+  font-size: 3.2rem; /* Set font size */
+  line-height: 1; /* Increase line spacing for readability */
+  color: #333; /* Dark gray color for text */
+  margin: 15px 0; /* Add vertical spacing around the paragraph */
+  padding: 10px; /* Add padding inside the paragraph */
+}
+
+.aboutMySkills {
+  display: grid; /* Use CSS Grid for layout */
+  grid-template-columns: repeat(4, 1fr); /* Four columns */
+  gap: 5px; /* Space between items */
+  padding: 10px; /* Container padding */
+}
+.skill_item {
+  /* Slightly rounded corners */
+  text-align: center; /* Center text */
+  padding: 10px; /* Padding inside each item */
+  font-size: 1.2rem; /* Font size */
+}
