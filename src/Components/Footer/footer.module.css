@@ -1,41 +1,30 @@
-.header {
-  background-color: #282c34;
+.footer_container {
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+  align-items: center;
+  gap: 10px;
   color: white;
-  padding: 40px 0;
+  padding: 3px;
+  margin-left: 0px;
+  background-color: rgb(40, 40, 40);
 }
 
-.header h1 {
-  font-size: 2.5rem;
-  margin: 0;
-}
-
-.header h2 {
-  font-size: 1.5rem;
-  margin: 10px 0 20px;
-}
-.hire_me {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 10px 20px;
+.social_icons {
+  margin: 0 15px;
   cursor: pointer;
 }
 
-.image-gallery {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
+.social_icons a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
 }
 
-.image-container {
-  max-width: 300px; /* Adjust as needed */
-  border-radius: 8px;
-  overflow: hidden;
+.social_icons a:hover {
+  color: #3d25ee; /* Change color on hover */
 }
-
-.portfolio-image {
-  max-width: 100%;
-  height: auto;
-  display: block;
-} 
+.social_icons p {
+  color: gray;
+  font-size: 1.5rem;
+}
