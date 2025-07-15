@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import classes from "./cantactus.module.css"; // Ensure the CSS file is named correctly
-import { FaMapMarkerAlt } from "react-icons/fa";
-import { FaPhone } from "react-icons/fa";
-import { FaEnvelope } from "react-icons/fa";
+import classes from "./cantactus.module.css";
+import { FaMapMarkerAlt, FaPhone, FaEnvelope } from "react-icons/fa";
+import emailjs from "emailjs-com"; // Import EmailJS
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -18,8 +17,23 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here
-    console.log("Form submitted:", formData);
+
+    // Send email using EmailJS
+    emailjs
+      .send(
+        "service_14xxgvw",
+        "template_pv7golf",
+        formData,
+        "Zu8Nt85g-u8hmPry2"
+      )
+      .then((response) => {
+        alert("Email sent successfully!", response.status, response.text);
+        // Optionally reset the form
+        setFormData({ name: "", email: "", message: "" });
+      })
+      .catch((error) => {
+        console.error("Failed to send email:", error);
+      });
   };
 
   return (
@@ -37,7 +51,6 @@ const ContactForm = () => {
               placeholder=" Name *"
               required
             />
-
             <input
               type="email"
               name="email"
@@ -46,7 +59,6 @@ const ContactForm = () => {
               placeholder=" Email *"
               required
             />
-
             <div className={classes.form_group_message}>
               <textarea
                 name="message"

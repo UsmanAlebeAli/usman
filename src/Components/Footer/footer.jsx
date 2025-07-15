@@ -11,27 +11,27 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaFacebook size={30} />
+          <FaFacebook size={15} />
         </a>
         <a
           href="https://www.linkedin.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaLinkedin size={30} />
+          <FaLinkedin size={15} />
         </a>
         <a
           href="https://www.youtube.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaYoutube size={30} />
+          <FaYoutube size={15} />
         </a>
         <a href="https://t.me" target="_blank" rel="noopener noreferrer">
-          <FaTelegram size={30} />
+          <FaTelegram size={15} />
         </a>
       </div>
-      <p>© 2023 Usman Alebe. All rights reserved.</p>
+      <p>© 2025 Usman. All rights reserved.</p>
     </footer>
   );
 };
