@@ -40,7 +40,7 @@ const RecentWorks = () => {
           <div className={classes.info}>
             <p>Netflix_clone </p>
             <a
-              href="https://github.com/your-repo/netflix-project"
+              href="https://github.com/UsmanAlebeAli/netflix_clone-1"
               target="_blank"
               rel="noopener noreferrer"
             >
