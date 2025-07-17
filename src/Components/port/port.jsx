@@ -5,7 +5,7 @@ import RecentWorks from "../Works/recentWorks";
 function Port() {
   return (
     <div>
-      <Header2 />
+      {/* <Header2 /> */}
       <RecentWorks />
     </div>
   );

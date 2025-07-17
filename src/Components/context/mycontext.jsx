@@ -1,12 +1,22 @@
-import React, { createContext, useContext } from "react";
+function Contex({
+  scrollToSection,
+  aboutRef,
+  resumeRef,
+  servicesRef,
+  worksRef,
+  contactRef,
+}) {
+  return (
+    <nav>
+      <ul>
+        <li>About</li>
+        <li>Resume</li>
+        <li onClick={() => scrollToSection(servicesRef)}>Services</li>
+        <li onClick={() => scrollToSection(worksRef)}>Recent Works</li>
+        <li onClick={() => scrollToSection(contactRef)}>Contact</li>
+      </ul>
+    </nav>
+  );
+}
 
-// Create a Context
-const MyContext = createContext();
-
-export const MyProvider = ({ children }) => {
-  const value = {}; // Your context value here
-  return <MyContext.Provider value={value}>{children}</MyContext.Provider>;
-};
-
-// Custom hook to use the context
-export const useMyContext = () => useContext(MyContext);
+export default Contex;

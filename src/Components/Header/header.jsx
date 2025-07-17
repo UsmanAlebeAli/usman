@@ -2,7 +2,15 @@ import React from "react";
 import classes from "./header.module.css";
 import { Link } from "react-router-dom";
 import uaa from "../../images/uaa.png";
-function Header() {
+function Header({
+  scrollToSection,
+  headRef,
+  aboutRef,
+  portRef,
+  resumeRef,
+  servicesRef,
+  contactRef,
+}) {
   return (
     <div className={classes.portfolio}>
       <nav className={classes.headerNav}>
@@ -12,22 +20,22 @@ function Header() {
           </Link>
         </div>
         <ul className={classes.navLinks}>
-          <li>
+          <li onClick={() => scrollToSection(headRef)}>
             <Link to="/">Home</Link>
           </li>
-          <li>
+          <li onClick={() => scrollToSection(aboutRef)}>
             <Link to="/about">About</Link>
           </li>
-          <li>
+          <li onClick={() => scrollToSection(portRef)}>
             <Link to="/portfolio">Portfolio</Link>
           </li>
-          <li>
+          <li onClick={() => scrollToSection(servicesRef)}>
             <Link to="/services">Services</Link>
           </li>
-          <li>
+          <li onClick={() => scrollToSection(resumeRef)}>
             <Link to="/resume">Resume</Link>
           </li>
-          <li>
+          <li onClick={() => scrollToSection(contactRef)}>
             <Link to="/contacts">Contacts</Link>
           </li>
         </ul>
