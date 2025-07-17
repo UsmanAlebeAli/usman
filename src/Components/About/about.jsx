@@ -31,7 +31,7 @@ function About() {
   return (
     <div className={classes.about}>
       <div className={classes.profile}>
-        <img src={usman} />
+        <img src={usman} alt="" />
       </div>
       <div className={classes.aboutMe}>
         <h1>About Me </h1>

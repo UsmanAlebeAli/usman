@@ -16,7 +16,7 @@ function Header({
       <nav className={classes.headerNav}>
         <div className={classes.logo}>
           <Link to="/" style={{ textDecoration: "none" }}>
-            <img src={uaa} /> <b>Usman </b>
+            <img src={uaa} alt=""/> <b>Usman </b>
           </Link>
         </div>
         <ul className={classes.navLinks}>
