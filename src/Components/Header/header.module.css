@@ -78,7 +78,12 @@
 }
 
 @media screen and (max-width: 576px) {
-  .headerNav {
+  .portfolio {
+    display: flex;
+    flex-direction: column !important;
+    height: auto;
+  }
+  .navLinks li:not(:first-child) {
     display: none;
   }
 }
