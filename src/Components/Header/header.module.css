@@ -78,7 +78,7 @@
 }
 
 @media screen and (max-width: 576px) {
-  .portfolio {
+  .navLinks {
     display: flex;
     flex-direction: column !important;
     height: auto;
