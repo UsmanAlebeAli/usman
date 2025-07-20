@@ -76,3 +76,14 @@
   max-width: 300px;
   border-radius: 8px;
 }
+
+@media screen and (max-width: 576px) {
+  .portfolio {
+    display: flex;
+    flex-direction: column !important;
+    height: auto;
+  }
+  .navLinks li:not(:first-child) {
+    display: none;
+  }
+}
