@@ -79,8 +79,6 @@
 
 @media screen and (max-width: 576px) {
   .headerNav {
-    display: flex;
-    flex-direction: column !important;
-    height: auto;
-  } 
+    display: none;
+  }
 }
