@@ -78,7 +78,8 @@
 }
 
 @media screen and (max-width: 576px) {
-  .portfolio {
+  .portfolio,
+  .headerNav {
     display: flex;
     flex-direction: column !important;
     height: auto;
